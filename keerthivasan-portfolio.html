@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Keerthivasan — Angular Developer with 5+ years of front-end development experience.">
+<title>Keerthivasan | Angular Developer</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2e;--panel2:#17223a;--text:#edf2ff;--muted:#a9b5cc;--accent:#65d6c4;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,Segoe UI,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:var(--accent)}
+.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.15em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;letter-spacing:-.055em;margin:16px 0}
+h1 span{color:var(--accent)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;padding:12px 20px;border-radius:9px;font-weight:700;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--accent);color:#07151a;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+.hero-card{background:linear-gradient(145deg,#182640,#10182b);border:1px solid var(--line);padding:30px;border-radius:22px;box-shadow:0 25px 70px #0004}
+.hero-card .initials{width:78px;height:78px;border-radius:20px;background:var(--accent);color:#07151a;display:grid;place-items:center;font-size:1.7rem;font-weight:900;margin-bottom:24px}
+.hero-card h2{margin:0 0 4px;font-size:1.4rem}.hero-card p{margin:0;color:var(--muted)}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:24px}.quick div{background:#ffffff08;padding:14px;border-radius:12px}.quick strong{display:block;font-size:1.25rem;color:var(--accent)}.quick small{color:var(--muted)}
+section{padding:78px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:32px}.section-head h2{font-size:2rem;margin:5px 0}.section-head p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px}.about p{color:var(--muted);margin-top:0}
+.info-list{display:grid;gap:12px}.info{padding:15px 17px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.info small{display:block;color:var(--muted)}.info strong{overflow-wrap:anywhere}
+.skills{display:flex;flex-wrap:wrap;gap:11px}.chip{padding:9px 14px;border:1px solid var(--line);background:var(--panel);border-radius:999px;color:#dce7f8;font-size:.92rem}
+.timeline{display:grid;gap:17px}.job{padding:22px 24px;background:var(--panel);border:1px solid var(--line);border-radius:15px;display:flex;justify-content:space-between;gap:20px}.job h3{margin:0}.job p{margin:4px 0 0;color:var(--muted)}.date{white-space:nowrap;color:var(--accent);font-size:.9rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:16px;min-height:210px}.card .number{color:var(--accent);font-weight:800;font-size:.8rem;letter-spacing:.12em}.card h3{font-size:1.35rem;margin:12px 0}.card p{color:var(--muted);font-size:.95rem}
+.edu{background:var(--panel);border:1px solid var(--line);padding:22px 24px;border-radius:14px;max-width:600px}.edu h3{margin:0}.edu p{margin:5px 0 0;color:var(--muted)}
+.contact{background:linear-gradient(135deg,#14243a,#10182b);border:1px solid var(--line);padding:35px;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{margin:0 0 8px}.contact p{color:var(--muted);margin:0}
+footer{padding:28px 0;color:var(--muted);font-size:.88rem;text-align:center}
+@media(max-width:800px){.hero,.about{grid-template-columns:1fr}.hero{padding:75px 0}.cards{grid-template-columns:1fr 1fr}.navlinks{gap:13px;font-size:.82rem}}
+@media(max-width:560px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.cards{grid-template-columns:1fr}.job,.contact{flex-direction:column;align-items:flex-start}.date{white-space:normal}.quick{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">KEERTHI<span>.</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero" id="home" style="border:0">
+<div>
+<div class="eyebrow">Angular Developer · Front-End Engineer</div>
+<h1>Building web experiences<br><span>that work beautifully.</span></h1>
+<p class="lead">I'm Keerthivasan, a front-end Angular Developer with 5+ years of experience building dynamic, responsive, and scalable web applications.</p>
+<div class="actions">
+<a class="btn primary" href="#contact">Get in touch</a>
+<a class="btn" href="Keerthivasan_Angular_Resume.pdf" download>Download resume</a>
+</div>
+</div>
+<aside class="hero-card">
+<div class="initials">KV</div>
+<h2>Keerthivasan</h2><p>Angular Developer</p>
+<div class="quick">
+<div><strong>5+</strong><small>Years experience</small></div>
+<div><strong>3</strong><small>Featured projects</small></div>
+</div>
+</aside>
+</section>
+
+<section id="about">
+<div class="section-head"><div class="eyebrow">Introduction</div><h2>About me</h2><p>A little about my professional background</p></div>
+<div class="about">
+<div><p>Front-End Angular Developer with over 5+ years of practical experience in developing dynamic, responsive, and scalable web applications. I work with Angular, TypeScript, JavaScript, RxJS, and modern front-end technologies to build reusable components and maintainable application structures.</p>
+<p>My experience includes REST API integration, reactive forms, routing, lazy loading, responsive UI development, performance optimization, and collaborative Agile development workflows.</p></div>
+<div class="info-list">
+<div class="info"><small>Email</small><strong><a href="mailto:keerthivj66@gmail.com">keerthivj66@gmail.com</a></strong></div>
+<div class="info"><small>Phone</small><strong><a href="tel:+919080570298">+91 9080570298</a></strong></div>
+<div class="info"><small>Education</small><strong>BE — IFET College of Engineering, 2020</strong></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="section-head"><div class="eyebrow">What I work with</div><h2>Technical skills</h2><p>Technologies and tools listed in my professional experience</p></div>
+<div class="skills">
+<span class="chip">Angular (6, 8, 16)</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SASS</span><span class="chip">RxJS</span><span class="chip">NgRx</span><span class="chip">Angular Material</span><span class="chip">Bootstrap</span><span class="chip">Jasmine</span><span class="chip">Karma</span><span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">Bitbucket</span><span class="chip">Jenkins</span><span class="chip">JIRA</span><span class="chip">SonarQube</span><span class="chip">Agile</span>
+</div>
+</section>
+
+<section id="experience">
+<div class="section-head"><div class="eyebrow">Career</div><h2>Work experience</h2><p>Professional experience</p></div>
+<div class="timeline">
+<div class="job"><div><h3>Orion Innovation</h3><p>Angular Developer</p></div><div class="date">Dec 2024 – Jun 2026</div></div>
+<div class="job"><div><h3>TVM InfoTech</h3><p>Angular Developer</p></div><div class="date">Sep 2022 – Dec 2024</div></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-head"><div class="eyebrow">Selected work</div><h2>Projects</h2><p>Project experience from my resume</p></div>
+<div class="cards">
+<article class="card"><div class="number">PROJECT 01</div><h3>Discipline</h3><p>Developed reusable Angular components, directives, pipes, and shared modules; integrated REST APIs and implemented routing, lazy loading, and responsive UI components.</p></article>
+<article class="card"><div class="number">PROJECT 02</div><h3>AFL</h3><p>Worked with stakeholders to understand requirements, implemented reactive forms and validations, integrated REST APIs, and applied Angular performance optimization techniques.</p></article>
+<article class="card"><div class="number">PROJECT 03</div><h3>RBFA</h3><p>Contributed across the front-end development lifecycle, building interactive responsive interfaces and reusable Angular modules, components, and services.</p></article>
+</div>
+</section>
+
+<section id="education">
+<div class="section-head"><div class="eyebrow">Education</div><h2>Academic background</h2></div>
+<div class="edu"><h3>Bachelor of Engineering (BE)</h3><p>IFET College of Engineering · 2020</p></div>
+</section>
+
+<section id="contact">
+<div class="contact"><div><div class="eyebrow">Let's connect</div><h2>Have an opportunity in mind?</h2><p>Feel free to reach out to discuss Angular Developer opportunities.</p></div>
+<div class="actions"><a class="btn primary" href="mailto:keerthivj66@gmail.com">Email me</a><a class="btn" href="tel:+919080570298">Call me</a></div></div>
+</section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 Keerthivasan · Angular Developer</div></footer>
+</body>
+</html>
